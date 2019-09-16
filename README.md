@@ -8,8 +8,11 @@ https://medium.com/@Charles_Stover/optimal-file-structure-for-react-applications
 
 In general:
 a) all components that are reusable are on /components root level
+
 b) component that is clearly a part of other component, not reusable is created in parent dir
+
 c) component is splited per files per different responsibilities, only top most component is exported from index file.
+
 d) components that represent route live in /pages dir
 
 2. I added redux with thunk, no use of redux is included in the repo (only empty store dir), but check out this way of structuring redux related code, for me it make sense:
